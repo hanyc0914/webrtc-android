@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="__local_aars__:/Users/hanyachao/webrtc/code/androidapp1/app/libs/libwebrtc.jar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

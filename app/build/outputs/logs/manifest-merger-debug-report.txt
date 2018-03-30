@@ -1,0 +1,153 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:2:1-56:12
+	package
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:4:11-39
+		INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:6:11-36
+		INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:3:11-57
+	xmlns:android
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:5:11-34
+		INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml
+uses-feature#android.hardware.camera
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:8:5-60
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:8:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:9:5-70
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:9:19-67
+uses-feature#0x00020000
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:10:5-78
+	android:glEsVersion
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:10:19-51
+	android:required
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:10:52-75
+uses-sdk
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:11:5-74
+INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:11:5-74
+INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:11:5-74
+INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:11:5-74
+INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:11:5-74
+	android:targetSdkVersion
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:11:42-71
+		INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:11:15-41
+		INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:13:5-65
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:13:22-62
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:14:22-76
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:15:5-80
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:15:22-77
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:16:5-71
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:16:22-68
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:17:5-68
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:17:22-65
+uses-permission#android.permission.INTERNET
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:18:5-67
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:18:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:19:5-80
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:19:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:20:5-79
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:20:22-76
+uses-permission#android.permission.CAPTURE_VIDEO_OUTPUT
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:21:5-79
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:21:22-76
+application
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:24:5-55:19
+	android:label
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:24:18-50
+	tools:ignore
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:26:18-51
+	android:icon
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:25:18-54
+activity#org.appspot.apprtc.ConnectActivity
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:28:9-43:20
+	android:label
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:29:19-51
+	android:windowSoftInputMode
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:30:19-58
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:28:19-49
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:31:13-34:29
+action#android.intent.action.MAIN
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:32:17-68
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:32:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:33:17-76
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:33:27-74
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:36:13-42:29
+action#android.intent.action.VIEW
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:37:17-68
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:37:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:38:17-75
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:39:27-75
+data
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:40:17-70
+	android:host
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:40:46-68
+	android:scheme
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:40:23-45
+activity#org.appspot.apprtc.SettingsActivity
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:45:9-47:20
+	android:label
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:46:19-56
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:45:19-50
+activity#org.appspot.apprtc.CallActivity
+ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:49:9-54:20
+	android:screenOrientation
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:51:19-55
+	android:label
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:50:19-51
+	android:configChanges
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:52:19-97
+	android:theme
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:53:19-59
+	android:name
+		ADDED from /Users/hanyachao/webrtc/code/androidapp1/app/src/main/AndroidManifest.xml:49:19-46

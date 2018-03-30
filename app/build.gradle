@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "org.appspot.apprtc"
+        minSdkVersion 23
+        targetSdkVersion 26
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //compile 'org.webrtc:google-webrtc:1.0.+'
+    compile files('libs/autobanh.jar')
+
+    //compile files('libs/libjingle_peerconnection_java.jar')
+    //compile files('libs/base_java.jar')
+    //compile files('libs/audio_device_java.jar')
+    //compile 'io.crossbar.autobahn:autobahn-android:17.10.5'
+}
