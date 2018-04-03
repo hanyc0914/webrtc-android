@@ -9,6 +9,8 @@ import org.webrtc.ThreadUtils;
 import org.webrtc.VideoFrame;
 import org.webrtc.VideoRenderer;
 
+import org.appspot.apprtc.PanoRender;
+
 import java.util.Objects;
 import java.util.concurrent.CountDownLatch;
 
