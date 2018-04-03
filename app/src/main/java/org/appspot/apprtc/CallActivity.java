@@ -60,6 +60,10 @@ import org.webrtc.VideoFrame;
 import org.webrtc.VideoRenderer;
 import org.webrtc.VideoSink;
 
+import org.appspot.apprtc.PanoRender;
+import org.appspot.apprtc.SurfacePanoRender;
+import org.appspot.apprtc.SurfaceViewPanoRender;
+
 /**
  * Activity for peer connection call setup, call waiting
  * and call view.
@@ -173,8 +177,8 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
   private AppRTCClient appRtcClient;
   private SignalingParameters signalingParameters;
   private AppRTCAudioManager audioManager = null;
-  private SurfaceViewRenderer pipRenderer;
-  private SurfaceViewRenderer fullscreenRenderer;
+  private SurfaceViewPanoRender pipRenderer;
+  private SurfaceViewPanoRender fullscreenRenderer;
   private VideoFileRenderer videoFileRenderer;
   private final List<VideoRenderer.Callbacks> remoteRenderers = new ArrayList<>();
   private Toast logToast;
