@@ -19,6 +19,9 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
 import android.view.Surface;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -293,11 +296,27 @@ public class PanoRender implements Callbacks, VideoSink {
     }
 
     public void renderFrame(I420Frame frame) {
-        Object buffer;
-        buffer = JavaI420Buffer.wrap(frame.width, frame.height, frame.yuvPlanes[0], frame.yuvStrides[0], frame.yuvPlanes[1], frame.yuvStrides[1], frame.yuvPlanes[2], frame.yuvStrides[2], () -> {
-            VideoRenderer.renderFrameDone(frame);
-        });
-        VideoFrame videoFrame = new VideoFrame((VideoFrame.Buffer)buffer, frame.rotationDegree, 0L);
+        Class frameClass = frame.getClass();
+        Method m = null;
+        try {
+            m = frameClass.getDeclaredMethod("toVideoFrame",null);
+            m.setAccessible(true);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        }
+        VideoFrame videoFrame = null;
+        try {
+            videoFrame = (VideoFrame)m.invoke(frame);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
+//        Object buffer;
+//        buffer = JavaI420Buffer.wrap(frame.width, frame.height, frame.yuvPlanes[0], frame.yuvStrides[0], frame.yuvPlanes[1], frame.yuvStrides[1], frame.yuvPlanes[2], frame.yuvStrides[2], () -> {
+//            VideoRenderer.renderFrameDone(frame);
+//        });
+//        VideoFrame videoFrame = new VideoFrame((VideoFrame.Buffer)buffer, frame.rotationDegree, 0L);
         this.onFrame(videoFrame);
         videoFrame.release();
     }
