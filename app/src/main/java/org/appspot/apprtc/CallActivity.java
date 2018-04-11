@@ -719,7 +719,11 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
   private VideoCapturer createVideoCapturer() {
     final VideoCapturer videoCapturer;
     String videoFileAsCamera = getIntent().getStringExtra(EXTRA_VIDEO_FILE_AS_CAMERA);
-    if (videoFileAsCamera != null) {
+    boolean panocaptureEnabled = false;
+    if(panocaptureEnabled){
+      videoCapturer = new PanoVideoCapturer("");
+    }
+    else if (videoFileAsCamera != null) {
       try {
         videoCapturer = new FileVideoCapturer(videoFileAsCamera);
       } catch (IOException e) {

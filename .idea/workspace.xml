@@ -11,6 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff9d2344-6946-4671-bc70-589e18572e7d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PanoVideoCapturer.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/buildId.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
@@ -19,7 +21,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$11.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$11.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$12.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$12.class" />
@@ -29,18 +30,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$16.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$16.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$17.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$17.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$18.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$7.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$8.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$ProxyRenderer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$ProxyRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$ProxyVideoSink.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity$ProxyVideoSink.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/appspot/apprtc/CallActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$11.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$11.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$12.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$12.class" />
@@ -50,24 +43,18 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$16.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$16.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$17.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$17.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$18.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$7.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$8.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$ProxyRenderer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$ProxyRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$ProxyVideoSink.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity$ProxyVideoSink.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/org/appspot/apprtc/CallActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/zip-cache/21v3Wz7isVcWH4Hqp7KATP8jXiY=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/zip-cache/21v3Wz7isVcWH4Hqp7KATP8jXiY=" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/debug/zip-cache/21v3Wz7isVcWH4Hqp7KATP8jXiY=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/debug/zip-cache/21v3Wz7isVcWH4Hqp7KATP8jXiY=" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_call.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_call.xml.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/dep/dependencies.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/dep/dependencies.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_0.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_0.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_1.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_1.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_4.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_4.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_5.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_5.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_6.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_6.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_8.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_8.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_9.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_9.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$11.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$11.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$12.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$12.class" />
@@ -77,18 +64,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$16.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$16.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$17.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$17.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$18.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$7.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$8.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$ProxyRenderer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$ProxyRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$ProxyVideoSink.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity$ProxyVideoSink.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/0/org/appspot/apprtc/CallActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$1.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$1.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/1.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/1.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/10.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/10.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/11.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/11.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/12.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/12.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/13.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/13.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/15.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/15.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/2.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/2.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$10.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$10.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$11.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$11.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$12.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$12.dex" />
@@ -98,19 +83,23 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$16.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$16.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$17.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$17.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$18.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$18.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$2.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$2.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$3.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$3.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$4.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$4.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$5.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$5.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$6.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$6.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$7.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$7.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$8.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$8.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$9.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$9.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$ProxyRenderer.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$ProxyRenderer.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$ProxyVideoSink.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity$ProxyVideoSink.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/CallActivity.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/SurfacePanoRender.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21/org/appspot/apprtc/SurfacePanoRender.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/3.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/3.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/5.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/5.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/6.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/6.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/7.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/7.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/8.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/9.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/9.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/1/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/1/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/11/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/11/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/12/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/12/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/13/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/13/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/14/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/14/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$11.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$11.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$12.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$12.class" />
@@ -120,18 +109,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$16.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$16.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$17.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$17.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$18.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$7.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$8.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$ProxyRenderer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$ProxyRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$ProxyVideoSink.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity$ProxyVideoSink.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/CallActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/SurfacePanoRender.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/org/appspot/apprtc/SurfacePanoRender.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$11.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$11.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$12.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$12.class" />
@@ -141,30 +122,34 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$16.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$16.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$17.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$17.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$18.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$7.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$8.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$ProxyRenderer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$ProxyRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$ProxyVideoSink.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity$ProxyVideoSink.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/CallActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/SurfacePanoRender.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/0/org/appspot/apprtc/SurfacePanoRender.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/build-info/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/build-info/debug/build-info.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/file-input-save-data.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/debug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_dependencies/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_dependencies/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_0/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_0/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_1/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_1/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_2/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_2/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_3/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_3/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_5/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_5/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_6/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_6/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_7/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_7/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_8/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_8/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_9/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_9/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/__content__.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/__content__.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/__content__.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PanoRender.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PanoRender.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_call.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_call.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -192,24 +177,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SurfaceViewPanoRender.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/SurfaceViewPanoRender.java">
+      <file leaf-file-name="PeerConnectionClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PeerConnectionClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4295#4296#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SurfacePanoRender.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/SurfacePanoRender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+            <state relative-caret-position="-10229">
+              <caret line="363" column="37" lean-forward="false" selection-start-line="363" selection-start-column="37" selection-end-line="363" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -217,70 +189,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CallActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CallActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+            <state relative-caret-position="117">
+              <caret line="722" column="27" lean-forward="false" selection-start-line="722" selection-start-column="27" selection-end-line="722" selection-end-column="27" />
               <folding>
-                <element signature="e#7674#7675#0" expanded="true" />
-                <element signature="e#7708#7709#0" expanded="true" />
+                <element signature="e#9634#9666#0" expanded="true" />
+                <element signature="e#13107#13138#0" expanded="true" />
+                <element signature="e#13456#13487#0" expanded="true" />
+                <element signature="e#23821#23888#0" expanded="true" />
+                <element signature="e#26844#26881#0" expanded="true" />
+                <element signature="e#26979#26990#0" expanded="true" />
+                <element signature="e#28510#28556#0" expanded="true" />
+                <element signature="e#31161#31162#0" expanded="true" />
+                <element signature="e#31212#31213#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VideoRenderer.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/org/webrtc/VideoRenderer.class">
+      <file leaf-file-name="FileVideoCapturer.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/org/webrtc/FileVideoCapturer.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="154" column="35" lean-forward="false" selection-start-line="154" selection-start-column="35" selection-end-line="154" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EglRenderer.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/org/webrtc/EglRenderer.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="286" column="29" lean-forward="false" selection-start-line="286" selection-start-column="19" selection-end-line="286" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PanoRender.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PanoRender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="415" column="46" lean-forward="false" selection-start-line="415" selection-start-column="46" selection-end-line="415" selection-end-column="46" />
+            <state relative-caret-position="-1538">
+              <caret line="64" column="5" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3059#3060#0" expanded="true" />
-                <element signature="e#3091#3092#0" expanded="true" />
-                <element signature="e#4613#4614#0" expanded="true" />
-                <element signature="e#4668#4669#0" expanded="true" />
-                <element signature="e#9280#9281#0" expanded="true" />
-                <element signature="e#9329#9330#0" expanded="true" />
-                <element signature="e#9361#9362#0" expanded="true" />
-                <element signature="e#9403#9404#0" expanded="true" />
-                <marker date="1522759038504" expanded="false" signature="14637:14648" ph=" { " />
-                <marker date="1522759038504" expanded="false" signature="14688:14694" ph=" }" />
-                <marker date="1522759038504" expanded="false" signature="22455:22466" ph=" { " />
-                <marker date="1522759038504" expanded="false" signature="22510:22516" ph=" }" />
-                <marker date="1522759038504" expanded="false" signature="22721:22736" ph=" { " />
-                <marker date="1522759038504" expanded="false" signature="22759:22769" ph=" }" />
+                <element signature="e#844#845#0" expanded="true" />
+                <element signature="e#897#898#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaI420Buffer.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/org/webrtc/JavaI420Buffer.class">
+      <file leaf-file-name="PanoVideoCapturer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PanoVideoCapturer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="37" column="164" lean-forward="false" selection-start-line="37" selection-start-column="164" selection-end-line="37" selection-end-column="164" />
+            <state relative-caret-position="154">
+              <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#544#648#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#1425#1426#0" expanded="true" />
+                <element signature="e#1460#1461#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PanoRender.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PanoRender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="305" column="9" lean-forward="false" selection-start-line="305" selection-start-column="9" selection-end-line="305" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoCapturer.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/org/webrtc/VideoCapturer.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="29" column="46" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -297,36 +272,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>swapbuffer</find>
-      <find>swapbuffers</find>
-      <find>framedrawer</find>
-      <find>addfr</find>
-      <find>eglrender</find>
-      <find>renderframe</find>
-      <find>EglSurfaceCreationrun</find>
-      <find>panosurfaceCreationrun</find>
-      <find>createEglSurface</find>
-      <find>eglCleanupBarrier</find>
-      <find>releaseEglSurface</find>
-      <find>PanoSurfaceCreation(</find>
-      <find>setFpsReduction</find>
-      <find>EglSurfaceCreation</find>
-      <find>swapbu</find>
-      <find>requestLayout</find>
-      <find>videorender</find>
-      <find>callbacks</find>
-      <find>renderFrameDone</find>
-      <find>videorenderer</find>
-      <find>drawframe</find>
-      <find>buffer</find>
-      <find>SurfaceEglRenderer</find>
-      <find>measure</find>
-      <find>SurfaceViewRenderer</find>
-      <find>renderf</find>
-      <find>tovideo</find>
-      <find>egl</find>
-      <find>tovide</find>
-      <find>renderfr</find>
+      <find>peerConnectionClient</find>
+      <find>localvideotrack</find>
+      <find>initializ</find>
+      <find>videocap</find>
+      <find>videoCapturer.</find>
+      <find>cameravideo</find>
+      <find>videocapt</find>
+      <find>videocapturer</find>
+      <find>localvideotr</find>
+      <find>createVideoTrack</find>
+      <find>localvideot</find>
+      <find>createvideotrack</find>
+      <find>createPeerConnectionInternal</find>
+      <find>createpeerconnection</find>
+      <find>videoCapturer</find>
+      <find>createPeerConnection</find>
+      <find>createVideoCapturer</find>
+      <find>onConnectedToRoomInternal</find>
+      <find>onConnectedToRoom</find>
+      <find>useValuesFromIntent</find>
+      <find>connecttoroom</find>
+      <find>EXTRA_VIDEO_FILE_AS_CAMERA</find>
+      <find>createScreenCapturer</find>
+      <find>builder</find>
+      <find>videoreader</find>
+      <find>getnext</find>
+      <find>tick</find>
+      <find>close</find>
+      <find>FileVideoCapturer</find>
+      <find>PanoVideoCapturer</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc</dir>
@@ -2113,9 +2088,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PeerConnectionClient.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/SurfacePanoRender.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/SurfaceViewPanoRender.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_call.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PanoRender.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/util/PanoVIdeoCapturer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PanoVideoCapturer.java" />
       </list>
     </option>
   </component>
@@ -2140,8 +2117,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2307,66 +2283,6 @@
               <option name="myItemId" value="libwebrtc.jar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webrtc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="androidapp1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="androidapp1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libwebrtc.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="androidapp1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="androidapp1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libwebrtc.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2388,6 +2304,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2462,7 +2380,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2562,8 +2479,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522759147481" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1523428800512" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2610,8 +2526,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522759147481" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1523428800512" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2643,6 +2558,27 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -2802,7 +2738,7 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
@@ -2836,8 +2772,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522759147540" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1523428800562" />
       </method>
     </configuration>
     <list size="1">
@@ -2886,65 +2821,40 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281471" sideWeight="0.47997138" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281471" sideWeight="0.4914163" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27157003" sideWeight="0.5822604" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956153" sideWeight="0.565093" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3960396" sideWeight="0.59155935" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956153" sideWeight="0.42918456" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27157003" sideWeight="0.41773963" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.050919376" sideWeight="0.4513591" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956153" sideWeight="0.47138768" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3960396" sideWeight="0.4062947" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956153" sideWeight="0.47997138" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3960396" sideWeight="0.40844062" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33380482" sideWeight="0.8848355" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956153" sideWeight="0.48855507" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6195191" sideWeight="0.48855507" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.04526167" sideWeight="0.6323319" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956153" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19377652" sideWeight="0.48855507" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27157003" sideWeight="0.56866956" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13519314" sideWeight="0.4950495" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39321074" sideWeight="0.46638054" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5070422" sideWeight="0.51951736" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25751072" sideWeight="0.4950495" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39321074" sideWeight="0.46065807" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25751072" sideWeight="0.5049505" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281471" sideWeight="0.4914163" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.537196" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956153" sideWeight="0.4320458" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.46280402" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956153" sideWeight="0.47997138" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39624506" sideWeight="0.41518807" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.04526167" sideWeight="0.6323319" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956153" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6195191" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5070422" sideWeight="0.51951736" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25751072" sideWeight="0.4950495" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39321074" sideWeight="0.46638054" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25751072" sideWeight="0.5049505" order="2" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905138" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3107,6 +3017,84 @@
           <properties />
           <option name="timeStamp" value="106" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java</url>
+          <line>727</line>
+          <properties />
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java</url>
+          <line>725</line>
+          <properties />
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java</url>
+          <line>732</line>
+          <properties />
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java</url>
+          <line>733</line>
+          <properties />
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java</url>
+          <line>734</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java</url>
+          <line>736</line>
+          <properties />
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java</url>
+          <line>741</line>
+          <properties />
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java</url>
+          <line>743</line>
+          <properties />
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java</url>
+          <line>744</line>
+          <properties />
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java</url>
+          <line>350</line>
+          <properties />
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java</url>
+          <line>720</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/ConnectActivity.java</url>
+          <line>111</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/ConnectActivity.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java</url>
           <line>140</line>
@@ -3171,65 +3159,18 @@
           </properties>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PanoRender.java</url>
-          <line>415</line>
-          <properties class="org.appspot.apprtc.PanoRender" method="renderFrameOnRenderThread">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="101" />
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java</url>
+          <line>109</line>
+          <properties field="EXTRA_VIDEO_FILE_AS_CAMERA" class="org.appspot.apprtc.CallActivity" />
+          <option name="timeStamp" value="121" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="107" />
+      <option name="time" value="128" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/preferences.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import-summary.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/jre/jdk/Contents/Home/lib/tools.jar!/com/sun/tools/classfile/StackMapTable_attribute.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-26/android.jar!/android/app/Activity.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -3279,68 +3220,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/org/webrtc/VideoSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="53" lean-forward="false" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_call.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_hud.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_connect.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/ConnectActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="207" column="29" lean-forward="true" selection-start-line="207" selection-start-column="29" selection-end-line="207" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -3359,47 +3267,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/org/webrtc/VideoCapturer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="39" column="46" lean-forward="true" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/AppRTCClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-230">
-          <caret line="84" column="37" lean-forward="false" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/DirectRTCClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2825">
-          <caret line="117" column="24" lean-forward="true" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/TCPChannelClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="190" column="34" lean-forward="true" selection-start-line="190" selection-start-column="34" selection-end-line="190" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/AppRTCProximitySensor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="52" column="54" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/org/webrtc/PeerConnectionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2648">
-          <caret line="257" column="32" lean-forward="false" selection-start-line="257" selection-start-column="32" selection-end-line="257" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -3433,31 +3304,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/AppRTCAudioManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1963">
-          <caret line="139" column="5" lean-forward="false" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-26/android.jar!/android/view/View.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PeerConnectionClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19035">
-          <caret line="1300" column="0" lean-forward="false" selection-start-line="1300" selection-start-column="0" selection-end-line="1300" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3465,7 +3315,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="37" column="164" lean-forward="false" selection-start-line="37" selection-start-column="164" selection-end-line="37" selection-end-column="164" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3480,10 +3329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-251">
           <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#1297#1298#0" expanded="true" />
-            <element signature="e#1363#1364#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3505,14 +3350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding>
-            <element signature="e#4043#4044#0" expanded="true" />
-            <element signature="e#4094#4095#0" expanded="true" />
-            <element signature="e#4139#4140#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
-            <element signature="e#7112#7113#0" expanded="true" />
-            <element signature="e#7157#7158#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3520,10 +3357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding>
-            <element signature="e#5995#5996#0" expanded="true" />
-            <element signature="e#6069#6070#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3531,7 +3364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3547,21 +3379,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_call.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/org/webrtc/VideoRenderer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="154" column="35" lean-forward="false" selection-start-line="154" selection-start-column="35" selection-end-line="154" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3581,47 +3412,192 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PanoRender.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_connect.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="415" column="46" lean-forward="false" selection-start-line="415" selection-start-column="46" selection-end-line="415" selection-end-column="46" />
+        <state relative-caret-position="457">
+          <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+          <folding>
+            <element signature="e#2645#2681#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/TCPChannelClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-752">
+          <caret line="276" column="13" lean-forward="false" selection-start-line="276" selection-start-column="13" selection-end-line="276" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/AppRTCClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="84" column="31" lean-forward="false" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/DirectRTCClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4157">
+          <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/WebSocketChannelClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/org/webrtc/PeerConnectionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="119" column="46" lean-forward="false" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CpuMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="285" column="54" lean-forward="true" selection-start-line="285" selection-start-column="54" selection-end-line="285" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/ConnectActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="508" column="0" lean-forward="false" selection-start-line="508" selection-start-column="0" selection-end-line="508" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/org/webrtc/CameraVideoCapturer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="69" column="30" lean-forward="false" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PeerConnectionClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10229">
+          <caret line="363" column="37" lean-forward="false" selection-start-line="363" selection-start-column="37" selection-end-line="363" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3059#3060#0" expanded="true" />
-            <element signature="e#3091#3092#0" expanded="true" />
-            <element signature="e#4613#4614#0" expanded="true" />
-            <element signature="e#4668#4669#0" expanded="true" />
-            <element signature="e#9280#9281#0" expanded="true" />
-            <element signature="e#9329#9330#0" expanded="true" />
-            <element signature="e#9361#9362#0" expanded="true" />
-            <element signature="e#9403#9404#0" expanded="true" />
-            <marker date="1522759038504" expanded="false" signature="14637:14648" ph=" { " />
-            <marker date="1522759038504" expanded="false" signature="14688:14694" ph=" }" />
-            <marker date="1522759038504" expanded="false" signature="22455:22466" ph=" { " />
-            <marker date="1522759038504" expanded="false" signature="22510:22516" ph=" }" />
-            <marker date="1522759038504" expanded="false" signature="22721:22736" ph=" { " />
-            <marker date="1522759038504" expanded="false" signature="22759:22769" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/SurfacePanoRender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state relative-caret-position="71">
+          <caret line="71" column="38" lean-forward="true" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/util/PanoVIdeoCapturer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/AppRTCAudioManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/org/webrtc/VideoSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/CallActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+        <state relative-caret-position="117">
+          <caret line="722" column="27" lean-forward="false" selection-start-line="722" selection-start-column="27" selection-end-line="722" selection-end-column="27" />
           <folding>
-            <element signature="e#7674#7675#0" expanded="true" />
-            <element signature="e#7708#7709#0" expanded="true" />
+            <element signature="e#9634#9666#0" expanded="true" />
+            <element signature="e#13107#13138#0" expanded="true" />
+            <element signature="e#13456#13487#0" expanded="true" />
+            <element signature="e#23821#23888#0" expanded="true" />
+            <element signature="e#26844#26881#0" expanded="true" />
+            <element signature="e#26979#26990#0" expanded="true" />
+            <element signature="e#28510#28556#0" expanded="true" />
+            <element signature="e#31161#31162#0" expanded="true" />
+            <element signature="e#31212#31213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/org/webrtc/VideoCapturer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" column="46" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/libs/libwebrtc.jar!/org/webrtc/FileVideoCapturer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1538">
+          <caret line="64" column="5" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PanoVideoCapturer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#544#648#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#1425#1426#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/appspot/apprtc/PanoRender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="305" column="9" lean-forward="false" selection-start-line="305" selection-start-column="9" selection-end-line="305" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
