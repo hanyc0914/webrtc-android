@@ -1,37 +1,40 @@
 package org.appspot.apprtc;
 
-import org.webrtc.EglBase;
-import org.webrtc.GlTextureFrameBuffer;
-import org.webrtc.GlUtil;
-import org.webrtc.JavaI420Buffer;
-import org.webrtc.Logging;
-import org.webrtc.ThreadUtils;
-import org.webrtc.VideoFrame;
-import org.webrtc.VideoFrameDrawer;
-import org.webrtc.VideoRenderer;
-import org.webrtc.VideoSink;
 import android.graphics.Bitmap;
+import android.graphics.Bitmap.Config;
 import android.graphics.Matrix;
 import android.graphics.SurfaceTexture;
-import android.graphics.Bitmap.Config;
 import android.opengl.GLES20;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
+import android.util.Log;
 import android.view.Surface;
+
+import org.webrtc.EglBase;
+import org.webrtc.EglBase.Context;
+import org.webrtc.GlTextureFrameBuffer;
+import org.webrtc.GlUtil;
+import org.webrtc.Logging;
+import org.webrtc.RendererCommon.GlDrawer;
+import org.webrtc.ThreadUtils;
+import org.webrtc.VideoFrame;
+import org.webrtc.VideoFrameDrawer;
+import org.webrtc.VideoRenderer.Callbacks;
+import org.webrtc.VideoRenderer.I420Frame;
+import org.webrtc.VideoSink;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.FloatBuffer;
+import java.nio.ShortBuffer;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Locale;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
-import org.webrtc.EglBase.Context;
-import org.webrtc.RendererCommon.GlDrawer;
-import org.webrtc.VideoRenderer.Callbacks;
-import org.webrtc.VideoRenderer.I420Frame;
 
 /**
  * Created by hanyachao on 2018/4/3.
@@ -64,6 +67,16 @@ public class PanoRender implements Callbacks, VideoSink {
     private long renderTimeNs;
     private long renderSwapBufferTimeNs;
     private GlTextureFrameBuffer bitmapTextureFramebuffer;
+    private int mVBO = 0;
+    private int mShaderProgram = 0;
+    private int mVertexBuffer[] = new int[5];
+    private float mPos[];
+    private short mIndex[];
+    private int mIndexBuffer = 0;
+    private float mFOV = 0;
+
+    private final Matrix mModel = new Matrix();
+
     private final Runnable logStatisticsRunnable = new Runnable() {
         public void run() {
             PanoRender.this.logStatistics();
@@ -414,6 +427,7 @@ public class PanoRender implements Callbacks, VideoSink {
     }
 
     private void renderFrameOnRenderThread() {
+        checkGLError();
         Object var2 = this.frameLock;
         VideoFrame frame;
         synchronized(this.frameLock) {
@@ -473,6 +487,7 @@ public class PanoRender implements Callbacks, VideoSink {
             this.drawMatrix.preScale(scaleX, scaleY);
             this.drawMatrix.preTranslate(-0.5F, -0.5F);
             if(shouldRenderFrame) {
+                checkGLError();
                 GLES20.glClearColor(0.0F, 0.0F, 0.0F, 0.0F);
                 GLES20.glClear(16384);
                 this.frameDrawer.drawFrame(frame, this.drawer, this.drawMatrix, 0, 0, this.eglBase.surfaceWidth(), this.eglBase.surfaceHeight());
@@ -593,6 +608,8 @@ public class PanoRender implements Callbacks, VideoSink {
 
                 PanoRender.this.eglBase.makeCurrent();
                 GLES20.glPixelStorei(3317, 1);
+
+                initRender();
             }
 
         }
@@ -615,4 +632,167 @@ public class PanoRender implements Callbacks, VideoSink {
     public interface FrameListener {
         void onFrame(Bitmap var1);
     }
+
+
+    private void initRender() {
+        generateData();
+        checkGLError();
+        if (mShaderProgram == 0) {
+            mShaderProgram = GLES20.glCreateProgram();
+
+            int verShader = GLES20.glCreateShader(GLES20.GL_VERTEX_SHADER);
+            String vertex =
+            "precision mediump float; precision mediump int;precision mediump sampler2D;"+
+            "uniform mat4 camera;" +
+            "uniform mat4 model;"   +
+            "attribute vec3 vert;"  +
+            "attribute vec2 vertTexCoord;"  +
+            "varying vec4 fragTexCoord;"    +
+            "void main() {"                 +
+            "    fragTexCoord = vertTexCoord;"  +
+            "    gl_Position = camera * model * vec4(vert, 1);" +
+            "}";
+            GLES20.glShaderSource(verShader, vertex);
+            int fraSHader = GLES20.glCreateShader(GLES20.GL_FRAGMENT_SHADER);
+
+            checkGLError();
+
+            String oesFragment =
+                    "#extension GL_OES_EGL_image_external : require\n" +
+                    "precision mediump float;\n" +
+                    "varying vec2 interp_tc;\n" +
+                    "uniform samplerExternalOES oes_tex;\n\n" +
+                    "void main() {\n  " +
+                            "gl_FragColor = texture2D(oes_tex, interp_tc);\n}\n";
+            GLES20.glShaderSource(fraSHader, oesFragment);
+
+            checkGLError();
+
+            GLES20.glAttachShader(mShaderProgram, verShader);
+            GLES20.glAttachShader(mShaderProgram, fraSHader);
+        }
+
+        if (mVertexBuffer[0] == 0) {
+            // generate buffer
+            Log.d("test", "one");
+            // pos and tex
+            GLES20.glGenBuffers(1, mVertexBuffer, 0);
+            GLES20.glBindBuffer(GLES20.GL_ARRAY_BUFFER, mVertexBuffer[0]);
+
+            ByteBuffer posBuffer = ByteBuffer.allocateDirect(mPos.length * 4);
+            posBuffer.order(ByteOrder.nativeOrder());
+            FloatBuffer posFloatBuffer = posBuffer.asFloatBuffer();
+            posFloatBuffer.put(mPos);
+            posFloatBuffer.flip();
+            posFloatBuffer.position(0);
+
+            GLES20.glBufferData(GLES20.GL_ARRAY_BUFFER, posFloatBuffer.limit() * 4, posFloatBuffer,GLES20.GL_STATIC_DRAW);
+
+
+            if (true) {
+                return;
+            }
+
+            // index
+            GLES20.glGenBuffers(1, mVertexBuffer, 1);
+            GLES20.glBindBuffer(GLES20.GL_ELEMENT_ARRAY_BUFFER, mVertexBuffer[1]);
+
+            ByteBuffer indexBuffer = ByteBuffer.allocateDirect(mIndex.length * 4);
+            indexBuffer.order(ByteOrder.nativeOrder());
+            ShortBuffer indexFloatBuffer = indexBuffer.asShortBuffer();
+            indexFloatBuffer.put(mIndex);
+            indexFloatBuffer.flip();
+            indexFloatBuffer.position(0);
+
+            int limit = indexFloatBuffer.limit();
+            Log.d("test", "limit:" + limit);
+            GLES20.glBufferData(GLES20.GL_ELEMENT_ARRAY_BUFFER, indexFloatBuffer.limit() * 4, indexFloatBuffer,GLES20.GL_STATIC_DRAW);
+        }
+        // get projection matrix
+
+        checkGLError();
+    }
+
+    private void generateData() {
+        int latitude = 10;
+        int longitude = 10;
+        int posSize = (latitude * 2 + 1) * (longitude + 1) * 5;
+        mPos = new float[posSize];
+        float deltaV = 0.5f / latitude;// V的纹理坐标的步长
+        float M_PI = 3.14159265358979323846264338327950288f;
+        float longtiAngleStep = 2 * M_PI / longitude;
+
+        float deltaLAngle = M_PI / 2 / latitude;
+        float radius = 2.0f;
+        int posIndex = 0;
+        for (int i=0; i<=latitude; ++i) {
+            float height = (float)Math.cos(i*deltaLAngle) * radius;
+            float curRadius = (float)Math.sqrt(radius * radius - height * height);
+            float cv = 0.5f + deltaV * i;
+            for (int j=0; j<=longitude; ++j) {
+                float angle = j * longtiAngleStep;
+                float cx = (float)Math.cos(angle) * curRadius;
+                float cy = (float)Math.sin(angle) * curRadius;
+
+                float cu = (float)j / longitude;
+
+                mPos[posIndex++] = cx;
+                mPos[posIndex++] = height;
+                mPos[posIndex++] = cy;
+
+                mPos[posIndex++] = cu;
+                mPos[posIndex++] = cv;
+            }
+        }
+
+        for (int i=1; i<=latitude; ++i) {
+            float height = - (float)Math.sin(i * deltaLAngle) * radius;
+            float curRadius = (float)Math.sqrt(radius * radius - height * height);
+            float cv = 0.5f - deltaV * i;
+            for (int j=0; j<= longitude; ++j) {
+                float angle = j * longtiAngleStep;
+                float cx = (float)Math.cos(angle) * curRadius;
+                float cy = (float)Math.sin(angle) * curRadius;
+
+                float cu = (float)j / longitude;
+
+                mPos[posIndex++] = cx;
+                mPos[posIndex++] = height;
+                mPos[posIndex++] = cy;
+
+                mPos[posIndex++] = cu;
+                mPos[posIndex++] = cv;
+            }
+        }
+
+        // index
+        int indexSize = (latitude - 1) * 2 * (longitude) * 2 * 3;
+        int eleIndex = 0;
+        mIndex = new short[indexSize];
+        for (int i=1; i<=latitude; ++i) {
+            for (int j=0; j<longitude; ++j) {
+                int LU = (i-1) * (longitude + 1) + j;
+                int RU = (i-1) * (longitude + 1) + j + 1;
+                int LD = i * (longitude + 1) + j;
+                int RD = i * (longitude + 1) + j + 1;
+
+                mIndex[eleIndex++] = (short)LU;
+                mIndex[eleIndex++] = (short)LD;
+                mIndex[eleIndex++] = (short)RD;
+
+                mIndex[eleIndex++] = (short)RD;
+                mIndex[eleIndex++] = (short)RU;
+                mIndex[eleIndex++] = (short)LU;
+            }
+        }
+
+    }
+
+    void checkGLError() {
+        int errorCode = GLES20.glGetError();
+        if (errorCode != 0) {
+            Log.d("test", "gl error code:" + errorCode);
+        }
+    }
+
 }
