@@ -1,4 +1,0 @@
-#Tue Apr 17 15:53:50 CST 2018
-base.0=/Users/xiewei/Projects/bytedance/webrtc-android/app/build/intermediates/transforms/dexMerger/debug/19
-path.0=classes.dex
-renamed.0=classes.dex
