@@ -108,9 +108,12 @@ public class PanoVideoCapturer implements VideoCapturer {
         ByteBuffer dataU = buffer.getDataU();
         ByteBuffer dataV = buffer.getDataV();
         int ysize = this.width * this.height;
-        dataY = ByteBuffer.wrap(yuvbuffer, 0, ysize);
-        dataU = ByteBuffer.wrap(yuvbuffer, ysize, ysize/4);
-        dataV = ByteBuffer.wrap(yuvbuffer, ysize*5/4, ysize/4);
+        dataY.put(yuvbuffer, 0, ysize);
+        dataU.put(yuvbuffer, ysize, ysize/4);
+        dataV.put(yuvbuffer, 5*ysize/4, ysize/4);
+//        dataY = ByteBuffer.wrap(yuvbuffer, 0, ysize);
+//        dataU = ByteBuffer.wrap(yuvbuffer, ysize, ysize/4);
+//        dataV = ByteBuffer.wrap(yuvbuffer, ysize*5/4, ysize/4);
         VideoFrame frame = new VideoFrame(buffer, 0, captureTimeNs);
         fqueue.offer(frame);
         int size = fqueue.size();

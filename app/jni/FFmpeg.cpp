@@ -120,18 +120,9 @@ int FFmpeg::h264Decodec(JNIEnv *env, jobject thisz) {
 				int rs = sws_scale(pSwsCtx,
 						(const uint8_t* const *) pFrame->data, pFrame->linesize,
 						0, height, pFrameYUV->data, pFrameYUV->linesize);
-			    if(pFrameYUV->data[0][0] == buffer[0]){
-			        LOGI("******************equal********************\n");
-			    }else{
-			        LOGI("******************not equal****************\n");
-			    }
-				LOGI("***************sws_scale************************\n");
                 temp = env->GetPrimitiveArrayCritical((jarray)retArray, 0);
-                LOGI("***************get array************************\n");
 			    memcpy(temp, buffer, length);
-			    LOGI("***************mem_copy************************\n");
 			    env->ReleasePrimitiveArrayCritical(retArray, temp, 0);
-			    LOGI("***************release array***************\n");
 				env->CallVoidMethod(thisz, onframe, retArray);
                 LOGI("***************ffmpeg decodec one frame*******************\n");
 				//if (rs == -1) {
@@ -141,20 +132,6 @@ int FFmpeg::h264Decodec(JNIEnv *env, jobject thisz) {
 			}
 		}
 		av_free_packet(&packet);
-	}
-	while(1){
-	    ret = avcodec_decode_video2(pCodecCtx, pFrame, &frameFinished, &packet);
-	    if(ret < 0){
-	        break;
-	    }
-	    if(!frameFinished){
-	        break;
-	    }
-	    int rs = sws_scale(pSwsCtx, (const uint8_t* const *) pFrame->data, pFrame->linesize,
-        				   0, height, pFrameYUV->data, pFrameYUV->linesize);
-        memcpy(temp, buffer, length);
-        env->ReleasePrimitiveArrayCritical(retArray, temp, 0);
-       	env->CallVoidMethod(thisz, onframe, retArray);
 	}
 	return 1;
 }

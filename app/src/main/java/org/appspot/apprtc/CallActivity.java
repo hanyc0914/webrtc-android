@@ -720,10 +720,10 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
   private VideoCapturer createVideoCapturer() {
     final VideoCapturer videoCapturer;
     String videoFileAsCamera = getIntent().getStringExtra(EXTRA_VIDEO_FILE_AS_CAMERA);
-    String folderurl= Environment.getExternalStorageDirectory().getPath();
-    //String urltext_input="reference.y4m";
-    String urltext_input="sintel.mp4";
-    videoFileAsCamera=folderurl+"/"+urltext_input;
+//    String folderurl= Environment.getExternalStorageDirectory().getPath();
+//    String urltext_input="sintel.mp4";
+//    videoFileAsCamera=folderurl+"/"+urltext_input;
+    videoFileAsCamera="rtsp://184.72.239.149/vod/mp4://BigBuckBunny_175k.mov";
 
     boolean panocaptureEnabled = false;
     if (videoFileAsCamera != null) {
