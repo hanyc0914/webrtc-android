@@ -23,6 +23,7 @@ import android.media.projection.MediaProjectionManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -719,13 +720,15 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
   private VideoCapturer createVideoCapturer() {
     final VideoCapturer videoCapturer;
     String videoFileAsCamera = getIntent().getStringExtra(EXTRA_VIDEO_FILE_AS_CAMERA);
+    String folderurl= Environment.getExternalStorageDirectory().getPath();
+    //String urltext_input="reference.y4m";
+    String urltext_input="sintel.mp4";
+    videoFileAsCamera=folderurl+"/"+urltext_input;
+
     boolean panocaptureEnabled = false;
-    if(panocaptureEnabled){
-      videoCapturer = new PanoVideoCapturer("");
-    }
-    else if (videoFileAsCamera != null) {
+    if (videoFileAsCamera != null) {
       try {
-        videoCapturer = new FileVideoCapturer(videoFileAsCamera);
+        videoCapturer = new PanoVideoCapturer(videoFileAsCamera);
       } catch (IOException e) {
         reportError("Failed to open video file for emulated camera");
         return null;
