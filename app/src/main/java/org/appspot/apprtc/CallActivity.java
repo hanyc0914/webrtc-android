@@ -178,8 +178,8 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
   private AppRTCClient appRtcClient;
   private SignalingParameters signalingParameters;
   private AppRTCAudioManager audioManager = null;
-  private SurfaceViewRenderer pipRenderer;
-  private SurfaceViewRenderer fullscreenRenderer;
+  private SurfaceViewPanoRender pipRenderer;
+  private SurfaceViewPanoRender fullscreenRenderer;
   private VideoFileRenderer videoFileRenderer;
   private final List<VideoRenderer.Callbacks> remoteRenderers = new ArrayList<>();
   private Toast logToast;
@@ -718,17 +718,29 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
   }
 
   private VideoCapturer createVideoCapturer() {
+//    final VideoCapturer videoCapturer;
+//    String videoFileAsCamera = getIntent().getStringExtra(EXTRA_VIDEO_FILE_AS_CAMERA);
+//    String folderurl= Environment.getExternalStorageDirectory().getPath();
+//    String urltext_input="sintel.mp4";
+//    videoFileAsCamera=folderurl+"/"+urltext_input;
+//    videoFileAsCamera="rtsp://184.72.239.149/vod/mp4://BigBuckBunny_175k.mov";
+
+//    boolean panocaptureEnabled = false;
+//    if (videoFileAsCamera != null) {
+//      try {
+//        videoCapturer = new PanoVideoCapturer(videoFileAsCamera);
+//      } catch (IOException e) {
+//        reportError("Failed to open video file for emulated camera");
+//        return null;
+//      }
+//    }
+
+
     final VideoCapturer videoCapturer;
     String videoFileAsCamera = getIntent().getStringExtra(EXTRA_VIDEO_FILE_AS_CAMERA);
-    String folderurl= Environment.getExternalStorageDirectory().getPath();
-    String urltext_input="sintel.mp4";
-    videoFileAsCamera=folderurl+"/"+urltext_input;
-    //videoFileAsCamera="rtsp://184.72.239.149/vod/mp4://BigBuckBunny_175k.mov";
-
-    boolean panocaptureEnabled = false;
     if (videoFileAsCamera != null) {
       try {
-        videoCapturer = new PanoVideoCapturer(videoFileAsCamera);
+        videoCapturer = new FileVideoCapturer(videoFileAsCamera);
       } catch (IOException e) {
         reportError("Failed to open video file for emulated camera");
         return null;
