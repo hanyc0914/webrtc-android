@@ -6,6 +6,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.opengl.Matrix;
 import android.util.Log;
 
 
@@ -142,8 +143,9 @@ public class SensorData  implements SensorEventListener {
 		return null;
 	}
 
-	//TODO: compute the product of two matrixes
 	private float[] product(float[] mat1, float[] mat2) {
-		return null;
+		float temp[] = new float[16];
+		Matrix.multiplyMM(temp, 0, mat1, 0, mat2, 0);
+		return temp;
 	}
 }
