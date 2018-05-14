@@ -72,6 +72,7 @@ public class PanoRender implements Callbacks, VideoSink {
     private float mPos[];
     private float mTex[];
     private short mIndex[];
+    private SensorData mSensorData = new SensorData();
 
     private final Matrix mModel = new Matrix();
     private Camera mCamera = new Camera();
@@ -120,6 +121,7 @@ public class PanoRender implements Callbacks, VideoSink {
                 this.resetStatistics(currentTimeNs);
                 this.renderThreadHandler.postDelayed(this.logStatisticsRunnable, TimeUnit.SECONDS.toMillis(4L));
             }
+            mSensorData.initListeners();
         }
     }
 
@@ -656,8 +658,8 @@ public class PanoRender implements Callbacks, VideoSink {
             "varying vec2 fragTexCoord;"    +
             "void main() {"                 +
             "    fragTexCoord = vertTexCoord;"  +
-//            "    gl_Position = camera * vec4(vert, 1);" +
-                    "    gl_Position = vec4(vert, 1);" +
+            "    gl_Position = camera * vec4(vert, 1);" +
+//                    "    gl_Position = vec4(vert, 1);" +
             "}";
             GLES20.glShaderSource(verShader, vertex);
             GLES20.glCompileShader(verShader);
@@ -814,6 +816,10 @@ public class PanoRender implements Callbacks, VideoSink {
 
         GLES20.glViewport(0, 0, this.eglBase.surfaceWidth(), this.eglBase.surfaceHeight());
         // set MVP
+        float[] mvp = mSensorData.getMat();
+        int matLocation = GLES20.glGetUniformLocation(mShaderProgram, "camera");
+        GLES20.glUniformMatrix4fv(matLocation, 1, false, mvp, 0);
+
 
         ShortBuffer indexBuffer = ByteBuffer.allocateDirect(mIndex.length * 2)
                 .order(ByteOrder.nativeOrder())
