@@ -1,5 +1,6 @@
 package org.appspot.apprtc;
 
+import android.content.Context;
 import android.view.SurfaceHolder;
 
 import org.webrtc.EglBase;
@@ -8,8 +9,6 @@ import org.webrtc.RendererCommon;
 import org.webrtc.ThreadUtils;
 import org.webrtc.VideoFrame;
 import org.webrtc.VideoRenderer;
-
-import org.appspot.apprtc.PanoRender;
 
 import java.util.Objects;
 import java.util.concurrent.CountDownLatch;
@@ -28,8 +27,8 @@ public class SurfacePanoRender extends PanoRender implements SurfaceHolder.Callb
     private int rotatedFrameHeight;
     private int frameRotation;
 
-    public SurfacePanoRender(String name) {
-        super(name);
+    public SurfacePanoRender(Context context, String name) {
+        super(context, name);
     }
 
     public void init(EglBase.Context sharedContext, RendererCommon.RendererEvents rendererEvents, int[] configAttributes, RendererCommon.GlDrawer drawer) {

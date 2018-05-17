@@ -72,7 +72,7 @@ public class PanoRender implements Callbacks, VideoSink {
     private float mPos[];
     private float mTex[];
     private short mIndex[];
-    private SensorData mSensorData = new SensorData();
+    private SensorData mSensorData = null;
 
     private final Matrix mModel = new Matrix();
     private Camera mCamera = new Camera();
@@ -91,7 +91,8 @@ public class PanoRender implements Callbacks, VideoSink {
     };
     private final PanoRender.PanoSurfaceCreation panoSurfaceCreationRunnable = new PanoRender.PanoSurfaceCreation();
 
-    public PanoRender(String name) {
+    public PanoRender(android.content.Context context, String name) {
+        mSensorData = new SensorData(context);
         this.name = name;
     }
 

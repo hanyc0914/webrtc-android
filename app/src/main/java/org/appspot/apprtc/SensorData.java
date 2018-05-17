@@ -31,8 +31,15 @@ public class SensorData  implements SensorEventListener {
 	};
     private float[] mProj = new float[16];
 
+	private android.content.Context mContext;
+
     public float[] getMat() {
     	return mProj;
+	}
+
+	SensorData(android.content.Context context) {
+		mContext = context;
+		System.out.print("test");
 	}
     
     protected void finalize( )
@@ -44,7 +51,7 @@ public class SensorData  implements SensorEventListener {
     public Boolean initListeners(){
     	computePerspective();
     	// TODO pass context to this class
-//		mSensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
+		mSensorManager = (SensorManager) mContext.getSystemService(mContext.SENSOR_SERVICE);
 		if (mSensorManager != null) {
 			Boolean ret = mSensorManager.registerListener(this,
 					mSensorManager.getDefaultSensor(Sensor.TYPE_ROTATION_VECTOR),
@@ -113,9 +120,23 @@ public class SensorData  implements SensorEventListener {
 
 	public void updateCamera(float v1, float v2, float v3) {
 		double tw = 1 - (v1 * v1 + v2 * v2 + v3 * v3);
-		tw = Math.sqrt(tw);
-		float w = (float)tw;
-		
+		double sqrtValue = tw > 0 ? Math.sqrt(tw) : 0;
+		float w = (float) sqrtValue;
+		float[] quat = new float[]{w, v1, v2, v3};
+
+		// convert to matrix
+
+		float[] mat = convertQuatToMat(quat);
+		// convert mat to MVP
+
+		float[] viewMat = new float[]
+				{
+					mat[0], mat[1*4], mat[2*4], mat[3*4],
+					mat[1], mat[1*4+1], mat[2*4+1], mat[3*4+1],
+					mat[2], mat[1*4+2], mat[2*4+2], mat[3*4+2],
+					mat[3], mat[1*4+3], mat[2*4+3], mat[3*4+3]
+				};
+
 	}
 
 	void computePerspective() {
@@ -143,9 +164,49 @@ public class SensorData  implements SensorEventListener {
 		return null;
 	}
 
-	private float[] product(float[] mat1, float[] mat2) {
+	private float[] productOfMat(float[] mat1, float[] mat2) {
 		float temp[] = new float[16];
 		Matrix.multiplyMM(temp, 0, mat1, 0, mat2, 0);
 		return temp;
+	}
+
+	private float[] productOfQuat(float[] A, float[] B) {
+		float[] r = new float[4];
+		r[0] = A[0]*B[0] - A[1]*B[1] - A[2]*B[2] - A[3]*B[3];
+		r[1] = A[0]*B[1] - A[1]*B[0] - A[2]*B[3] - A[3]*B[2];
+		r[2] = A[0]*B[2] - A[2]*B[0] - A[3]*B[1] - A[1]*B[3];
+		r[3] = A[0]*B[3] - A[3]*B[0] - A[1]*B[2] - A[2]*B[1];
+		return r;
+	}
+
+	private float[] convertQuatToMat(float[] q) {
+		float[] Result = new float[16];
+		float qxx = q[1]*q[1];
+		float qyy = q[2]*q[2];
+		float qzz = q[3]*q[3];
+
+		float qxz = q[1]*q[3];
+		float qxy = q[1]*q[2];
+		float qyz = q[2]*q[3];
+		float qwx = q[0]*q[1];
+		float qwy = q[0]*q[2];
+		float qwz = q[0]*q[3];
+
+		Result[0] = 1 - 2 * (qyy +  qzz);
+		Result[1] = 2 * (qxy + qwz);
+		Result[2] = 2 * (qxz - qwy);
+		Result[3] = 0;
+
+		Result[1*4] = 2 * (qxy - qwz);
+		Result[1*4 + 1] = 1 - 2 * (qxx +  qzz);
+		Result[1*4 + 2] = 2 * (qyz + qwx);
+		Result[1*4 + 3] = 0;
+
+		Result[2*4] = 2 * (qxz + qwy);
+		Result[2*4 + 1] = 2 * (qyz - qwx);
+		Result[2*4 + 2] = 1 - 2 * (qxx +  qyy);
+		Result[2*4 + 3] = 1;
+
+		return Result;
 	}
 }

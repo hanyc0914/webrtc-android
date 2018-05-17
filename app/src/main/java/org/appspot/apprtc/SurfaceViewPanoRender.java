@@ -9,9 +9,6 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceHolder.Callback;
 import android.view.SurfaceView;
 
-import org.appspot.apprtc.PanoRender;
-import org.appspot.apprtc.SurfacePanoRender;
-
 import org.webrtc.EglBase;
 import org.webrtc.GlRectDrawer;
 import org.webrtc.Logging;
@@ -42,14 +39,14 @@ public class SurfaceViewPanoRender extends SurfaceView implements Callback, Call
 
     public SurfaceViewPanoRender(Context context) {
         super(context);
-        this.panoRenderer = new SurfacePanoRender(this.resourceName);
+        this.panoRenderer = new SurfacePanoRender(context, this.resourceName);
         this.getHolder().addCallback(this);
         this.getHolder().addCallback(this.panoRenderer);
     }
 
     public SurfaceViewPanoRender(Context context, AttributeSet attrs) {
         super(context, attrs);
-        this.panoRenderer = new SurfacePanoRender(this.resourceName);
+        this.panoRenderer = new SurfacePanoRender(context, this.resourceName);
         this.getHolder().addCallback(this);
         this.getHolder().addCallback(this.panoRenderer);
     }
