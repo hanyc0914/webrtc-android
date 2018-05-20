@@ -30,16 +30,44 @@ public class SensorData  implements SensorEventListener {
 			0, 0, 0, 1
 	};
     private float[] mProj = new float[16];
+	private float[] mViewMat = new float[]
+			{
+					1, 0, 0, 0,
+					0, 1, 0, 0,
+					0, 0, 1, 0,
+					0, 0, 0, 1
+			};
+	private float[] mModel = new float[]
+			{
+					1, 0, 0, 0,
+					0, 1, 0, 0,
+					0, 0, 1, 0,
+					0, 0, 0, 1
+			};
 
 	private android.content.Context mContext;
 
     public float[] getMat() {
-    	return mProj;
+    	float[] ret;
+		synchronized(this) {
+			ret = productOfMat(mProj, mViewMat);
+		}
+		return productOfMat(ret, mModel);
 	}
 
 	SensorData(android.content.Context context) {
 		mContext = context;
 		System.out.print("test");
+		double angle = Math.toRadians(-90);
+		float sinV = (float)Math.sin(angle);
+		float cosV = (float)Math.cos(angle);
+		mModel = new float[]
+				{
+						cosV, -sinV, 0, 0,
+						sinV, cosV, 0, 0,
+						0, 0, 1, 0,
+						0, 0, 0, 1
+				};
 	}
     
     protected void finalize( )
@@ -114,9 +142,6 @@ public class SensorData  implements SensorEventListener {
 		return -1;
 	}
 
-//	public Mat4 getMatrix() {
-//		return mView.times(mProj);
-//	}
 
 	public void updateCamera(float v1, float v2, float v3) {
 		double tw = 1 - (v1 * v1 + v2 * v2 + v3 * v3);
@@ -129,13 +154,16 @@ public class SensorData  implements SensorEventListener {
 		float[] mat = convertQuatToMat(quat);
 		// convert mat to MVP
 
-		float[] viewMat = new float[]
-				{
-					mat[0], mat[1*4], mat[2*4], mat[3*4],
-					mat[1], mat[1*4+1], mat[2*4+1], mat[3*4+1],
-					mat[2], mat[1*4+2], mat[2*4+2], mat[3*4+2],
-					mat[3], mat[1*4+3], mat[2*4+3], mat[3*4+3]
-				};
+		synchronized(this) {
+			mViewMat = new float[]
+					{
+							mat[0], mat[1 * 4], mat[2 * 4], mat[3 * 4],
+							mat[1], mat[1 * 4 + 1], mat[2 * 4 + 1], mat[3 * 4 + 1],
+							mat[2], mat[1 * 4 + 2], mat[2 * 4 + 2], mat[3 * 4 + 2],
+							mat[3], mat[1 * 4 + 3], mat[2 * 4 + 3], mat[3 * 4 + 3]
+					};
+		}
+
 
 	}
 
@@ -206,6 +234,9 @@ public class SensorData  implements SensorEventListener {
 		Result[2*4 + 1] = 2 * (qyz - qwx);
 		Result[2*4 + 2] = 1 - 2 * (qxx +  qyy);
 		Result[2*4 + 3] = 1;
+
+
+		Result[3*4 + 3] = 1;
 
 		return Result;
 	}
