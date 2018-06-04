@@ -44,15 +44,24 @@ public class SensorData  implements SensorEventListener {
 					0, 0, 1, 0,
 					0, 0, 0, 1
 			};
+	private float[] identiryMat = new float[]
+			{
+					1, 0, 0, 0,
+					0, 1, 0, 0,
+					0, 0, 1, 0,
+					0, 0, 0, 1
+			};
 
 	private android.content.Context mContext;
 
     public float[] getMat() {
     	float[] ret;
 		synchronized(this) {
-			ret = productOfMat(mProj, mViewMat);
+			ret = productOfMat1(mProj, mViewMat);
 		}
-		return productOfMat(ret, mModel);
+//		return productOfMat(ret, mModel);
+		return ret;
+//		return identiryMat;
 	}
 
 	SensorData(android.content.Context context) {
@@ -157,18 +166,34 @@ public class SensorData  implements SensorEventListener {
 		synchronized(this) {
 			mViewMat = new float[]
 					{
-							mat[0], mat[1 * 4], mat[2 * 4], mat[3 * 4],
-							mat[1], mat[1 * 4 + 1], mat[2 * 4 + 1], mat[3 * 4 + 1],
-							mat[2], mat[1 * 4 + 2], mat[2 * 4 + 2], mat[3 * 4 + 2],
-							mat[3], mat[1 * 4 + 3], mat[2 * 4 + 3], mat[3 * 4 + 3]
+							mat[0], mat[1 * 4], -mat[2 * 4], mat[3 * 4],
+							mat[1], mat[1 * 4 + 1], -mat[2 * 4 + 1], mat[3 * 4 + 1],
+							mat[2], mat[1 * 4 + 2], -mat[2 * 4 + 2], mat[3 * 4 + 2],
+							mat[3], mat[1 * 4 + 3], -mat[2 * 4 + 3], mat[3 * 4 + 3]
 					};
+			mViewMat = mat;
+			mViewMat[8] = -mat[8];
+			mViewMat[9] = -mat[9];
+			mViewMat[10] = -mat[10];
+
+			mViewMat = new float[]
+					{
+							1,  0,  0, 0,
+							0,  0, -1, 0,
+							0,  -1, 0, 0,
+							0,  0,  0, 1
+					};
+			mViewMat = identiryMat;
 		}
+//		Log.d("matrix", "right:"+mat[0] + " " + mat[1] + " " + mat[2] + "              " + (mat[0]*mat[4] + mat[1]*mat[5] + mat[2]*mat[6] ));
+//		Log.d("matrix", "up:"+ mat[4] + " " + mat[5] + " " + mat[6]  + "               " + (mat[8]*mat[4] + mat[9]*mat[5] + mat[10]*mat[6]));
+//		Log.d("matrix", "dir:"+ mat[8] + " " + mat[9] + " " + mat[10]+ "              "  + (mat[0]*mat[8] + mat[1]*mat[9] + mat[2]*mat[10]));
 
 
 	}
 
 	void computePerspective() {
-		float fov = 60;
+		float fov = 75;
 		float aspect = 1;
 		float near = 0.1f;
 		float far = 2;
@@ -192,10 +217,36 @@ public class SensorData  implements SensorEventListener {
 		return null;
 	}
 
-	private float[] productOfMat(float[] mat1, float[] mat2) {
+	private float[] productOfMat(float[] A, float[] B) {
 		float temp[] = new float[16];
-		Matrix.multiplyMM(temp, 0, mat1, 0, mat2, 0);
+		Matrix.multiplyMM(temp, 0, A, 0, B, 0);
+
+		float [] t = productOfMat1(A, B);
 		return temp;
+	}
+
+	private float[] productOfMat1(float[] A, float[] B) {
+		float t[] = new float[16];
+		t[0] = A[0]*B[0] + A[1]*B[4] + A[2]*B[8]  + A[3]*B[12];
+		t[1] = A[0]*B[1] + A[1]*B[5] + A[2]*B[9]  + A[3]*B[13];
+		t[2] = A[0]*B[2] + A[1]*B[6] + A[2]*B[10] + A[3]*B[14];
+		t[3] = A[0]*B[3] + A[1]*B[7] + A[2]*B[11] + A[3]*B[15];
+
+		t[4] = A[4]*B[0] + A[5]*B[4] + A[6]*B[8]  + A[7]*B[12];
+		t[5] = A[4]*B[1] + A[5]*B[5] + A[6]*B[9]  + A[7]*B[13];
+		t[6] = A[4]*B[2] + A[5]*B[6] + A[6]*B[10] + A[7]*B[14];
+		t[7] = A[4]*B[3] + A[5]*B[7] + A[6]*B[11] + A[7]*B[15];
+
+		t[8]  = A[8]*B[0] + A[9]*B[4] + A[10]*B[8]  + A[11]*B[12];
+		t[9]  = A[8]*B[1] + A[9]*B[5] + A[10]*B[9]  + A[11]*B[13];
+		t[10] = A[8]*B[2] + A[9]*B[6] + A[10]*B[10] + A[11]*B[14];
+		t[11] = A[8]*B[3] + A[9]*B[7] + A[10]*B[11] + A[11]*B[15];
+
+		t[12] = A[12]*B[0] + A[13]*B[4] + A[14]*B[8]  + A[15]*B[12];
+		t[13] = A[12]*B[1] + A[13]*B[5] + A[14]*B[9]  + A[15]*B[13];
+		t[14] = A[12]*B[2] + A[13]*B[6] + A[14]*B[10] + A[15]*B[14];
+		t[15] = A[12]*B[3] + A[13]*B[7] + A[14]*B[11] + A[15]*B[15];
+		return t;
 	}
 
 	private float[] productOfQuat(float[] A, float[] B) {
@@ -233,7 +284,7 @@ public class SensorData  implements SensorEventListener {
 		Result[2*4] = 2 * (qxz + qwy);
 		Result[2*4 + 1] = 2 * (qyz - qwx);
 		Result[2*4 + 2] = 1 - 2 * (qxx +  qyy);
-		Result[2*4 + 3] = 1;
+		Result[2*4 + 3] = 0;
 
 
 		Result[3*4 + 3] = 1;
