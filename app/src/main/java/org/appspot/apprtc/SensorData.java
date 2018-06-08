@@ -166,24 +166,13 @@ public class SensorData  implements SensorEventListener {
 		synchronized(this) {
 			mViewMat = new float[]
 					{
-							mat[0], mat[1 * 4], -mat[2 * 4], mat[3 * 4],
-							mat[1], mat[1 * 4 + 1], -mat[2 * 4 + 1], mat[3 * 4 + 1],
-							mat[2], mat[1 * 4 + 2], -mat[2 * 4 + 2], mat[3 * 4 + 2],
-							mat[3], mat[1 * 4 + 3], -mat[2 * 4 + 3], mat[3 * 4 + 3]
+							-mat[0], mat[1 * 4],     -mat[2 * 4],     mat[3 * 4],
+							-mat[1], mat[1 * 4 + 1], -mat[2 * 4 + 1], mat[3 * 4 + 1],
+							-mat[2], mat[1 * 4 + 2], -mat[2 * 4 + 2], mat[3 * 4 + 2],
+							-mat[3], mat[1 * 4 + 3], -mat[2 * 4 + 3], mat[3 * 4 + 3]
 					};
-			mViewMat = mat;
-			mViewMat[8] = -mat[8];
-			mViewMat[9] = -mat[9];
-			mViewMat[10] = -mat[10];
+			mViewMat[8] = mViewMat[8];
 
-			mViewMat = new float[]
-					{
-							1,  0,  0, 0,
-							0,  0, -1, 0,
-							0,  -1, 0, 0,
-							0,  0,  0, 1
-					};
-			mViewMat = identiryMat;
 		}
 //		Log.d("matrix", "right:"+mat[0] + " " + mat[1] + " " + mat[2] + "              " + (mat[0]*mat[4] + mat[1]*mat[5] + mat[2]*mat[6] ));
 //		Log.d("matrix", "up:"+ mat[4] + " " + mat[5] + " " + mat[6]  + "               " + (mat[8]*mat[4] + mat[9]*mat[5] + mat[10]*mat[6]));
@@ -197,7 +186,9 @@ public class SensorData  implements SensorEventListener {
 		float aspect = 1;
 		float near = 0.1f;
 		float far = 2;
-
+		for (int i=0; i<16; ++i) {
+			mProj[i] = 0;
+		}
 		float rad = (float)Math.toRadians(fov);
 
 		float tanHalfFov = (float)Math.tan(rad / 2.0);
@@ -225,7 +216,7 @@ public class SensorData  implements SensorEventListener {
 		return temp;
 	}
 
-	private float[] productOfMat1(float[] A, float[] B) {
+	private float[] productOfMat1(float[] B, float[] A) {
 		float t[] = new float[16];
 		t[0] = A[0]*B[0] + A[1]*B[4] + A[2]*B[8]  + A[3]*B[12];
 		t[1] = A[0]*B[1] + A[1]*B[5] + A[2]*B[9]  + A[3]*B[13];
