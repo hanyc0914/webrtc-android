@@ -159,19 +159,20 @@ public class SensorData  implements SensorEventListener {
 		float[] quat = new float[]{w, v1, v2, v3};
 
 		// convert to matrix
-
-		float[] mat = convertQuatToMat(quat);
+		double radian = Math.toRadians(45);
+		float[] roation = new float[]{(float)Math.cos(radian), (float)-Math.sin(radian), 0, 0};
+		float[] result = rotateQuat(quat, roation);
+		float[] mat = convertQuatToMat(result);
 		// convert mat to MVP
 
 		synchronized(this) {
 			mViewMat = new float[]
 					{
-							-mat[0], mat[1 * 4],     -mat[2 * 4],     mat[3 * 4],
-							-mat[1], mat[1 * 4 + 1], -mat[2 * 4 + 1], mat[3 * 4 + 1],
-							-mat[2], mat[1 * 4 + 2], -mat[2 * 4 + 2], mat[3 * 4 + 2],
-							-mat[3], mat[1 * 4 + 3], -mat[2 * 4 + 3], mat[3 * 4 + 3]
+							mat[0], mat[1 * 4],     mat[2 * 4],     mat[3 * 4],
+							mat[1], mat[1 * 4 + 1], mat[2 * 4 + 1], mat[3 * 4 + 1],
+							mat[2], mat[1 * 4 + 2], mat[2 * 4 + 2], mat[3 * 4 + 2],
+							mat[3], mat[1 * 4 + 3], mat[2 * 4 + 3], mat[3 * 4 + 3]
 					};
-			mViewMat[8] = mViewMat[8];
 
 		}
 //		Log.d("matrix", "right:"+mat[0] + " " + mat[1] + " " + mat[2] + "              " + (mat[0]*mat[4] + mat[1]*mat[5] + mat[2]*mat[6] ));
@@ -281,5 +282,15 @@ public class SensorData  implements SensorEventListener {
 		Result[3*4 + 3] = 1;
 
 		return Result;
+	}
+
+	private float[] rotateQuat(float[] A, float[] B) {
+		float[] result = new float[4];
+		result[0] = A[0]*B[0] - A[1]*B[1] - A[2]*B[2] - A[3]*B[3];
+		result[1] = A[0]*B[1] + A[1]*B[0] + A[2]*B[3] - A[3]*B[2];
+		result[2] = A[0]*B[2] + A[2]*B[0] + A[3]*B[1] - A[1]*B[3];
+		result[3] = A[0]*B[3] + A[3]*B[0] + A[1]*B[2] - A[2]*B[1];
+
+		return result;
 	}
 }
